@@ -1,0 +1,23 @@
+{
+  "name": "practica3entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david2o3/Practica3.git"
+  },
+  "author": "David Torralba Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david2o3/Practica3/issues"
+  },
+  "homepage": "https://github.com/david2o3/Practica3#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}
