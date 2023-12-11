@@ -1,0 +1,28 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  web:
+    build:
+      context: ./web
+    ports:
+      - '80:80'
+
+  api:
+    build:
+      context: ./api
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+
+  mongo:
+    build:
+      context: ./mongodb
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
